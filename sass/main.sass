@@ -1,0 +1,351 @@
+*
+	box-sizing: border-box
+
+@font-face
+	font-family: IBMPlexSans
+	src: url(../fonts/IBMPlexSans/IBMPlexSans-Bold.ttf)
+	font-weight: bold
+@font-face
+	font-family: IBMPlexSans
+	src: url(../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf)
+	font-weight: 600
+@font-face
+	font-family: IBMPlexSans
+	src: url(../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf)
+	font-weight: 500
+@font-face
+	font-family: IBMPlexSans
+	src: url(../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf)
+	font-weight: normal
+
+@font-face
+	font-family: SFUIDisplay
+	src: url(../fonts/SFUIDisplay/SFUIDisplay-Regular.ttf)
+	font-weight: 600
+
+.oprosnik__section
+	width: 100%
+	margin: 0 auto
+	background-image: linear-gradient(120deg, #f1961c, #7f23c6)
+
+
+.oprosnik__title
+	font-family: IBMPlexSans
+	font-size: 64px
+	font-weight: bold
+	font-style: normal
+	font-stretch: normal
+	line-height: 1.16
+	letter-spacing: normal
+	color: #fff
+	margin-bottom: 46px
+.oprosnik__sub-title
+	font-family: IBMPlexSans
+	font-size: 36px
+	font-weight: 500
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #fff
+	margin-bottom: 24px
+.oprosnik__paragraph
+	font-family: IBMPlexSans
+	font-size: 24px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #fff
+	margin-bottom: 75px
+
+.select-answers-list__title
+	font-family: IBMPlexSans
+	font-size: 36px
+	font-weight: 600
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #fff
+	margin-bottom: 13px
+.select-answers-list__sub-title
+	font-family: IBMPlexSans
+	font-size: 24px
+	font-weight: 500
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #fff
+	margin-bottom: 34px
+
+.select-answers-list__checks
+	margin-bottom: calc(56px - 17px)
+
+.select-answers-list__checks-field
+	margin-bottom: 17px
+	display: flex
+	align-items: flex-start
+
+
+.select-answers-list__checks-name
+	font-family: IBMPlexSans
+	font-size: 16px
+	font-weight: normal
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	color: #fff
+
+.select-answers-list__btn
+	border-radius: 4px
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 6px 12px 0 rgba(0, 0, 0, 0.05)
+	border: solid 0.5px rgba(0, 0, 0, 0.05)
+	//background-color: rgba(255, 255, 255, 0)
+	background-color: #f1961c
+	font-family: SFUIDisplay
+	font-size: 18px
+	font-weight: 600
+	font-style: normal
+	font-stretch: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: center
+	color: #fff
+	padding: 16px 42px 16px 42px
+	width: calc(258px + 42px * 2)
+
+.select-answers-list__item
+	display: none
+.select-answers-list__item.active
+	display: block
+/*
+ * @media
+ */
+@media (max-width: 576px)
+	.oprosnik__container
+		width: 100%
+		max-width: 100%
+		margin: 0 auto
+		padding:
+			top: 43px
+			bottom: 68px
+	.oprosnik__content
+		width: 100%
+		max-width: 100%
+		margin: 0 auto
+		padding:
+			right: 15px
+			left: 15px
+	.oprosnik__title
+		font-size: 46px
+		line-height: 1.13
+		margin-bottom: 40px
+	.oprosnik__sub-title
+		font-size: 24px
+		margin-bottom: 21px
+	.oprosnik__paragraph
+		font-size: 16px
+		margin-bottom: 55px
+	.select-answers-list__title
+		font-size: 24px
+		margin-bottom: 23px
+	.select-answers-list__sub-title
+		font-size: 18px
+		margin-bottom: 21px
+	.select-answers-list__checks
+		margin-bottom: calc(55px - 5px)
+	.select-answers-list__checks-field
+		margin-bottom: 5px
+	.elect-answers-list__checks-name
+		font-size: 14px
+	.select-answers-list__btn
+		font-size: 18px
+		width: 100%
+	.select-answers-list__checks-name
+		margin-left: 21px
+	.select-answers-list__checks-btn
+		width: 19px
+		height: 19px
+		border: solid 1px #979797
+		background-color: #fffdfd
+@media (min-width: 576px)
+	.oprosnik__container
+		width: 540px
+		margin: 0 auto
+		padding:
+			top: 43px
+			bottom: 68px
+	.oprosnik__content
+		width: 100%
+		max-width: 100%
+		margin: 0 auto
+		padding:
+			right: 15px
+			left: 15px
+	.oprosnik__title
+		font-size: 46px
+		line-height: 1.13
+		margin-bottom: 40px
+	.oprosnik__sub-title
+		font-size: 24px
+		margin-bottom: 21px
+	.oprosnik__paragraph
+		font-size: 16px
+		margin-bottom: 55px
+	.select-answers-list__title
+		font-size: 24px
+		margin-bottom: 23px
+	.select-answers-list__sub-title
+		font-size: 18px
+		margin-bottom: 21px
+	.select-answers-list__checks
+		margin-bottom: calc(55px - 5px)
+	.select-answers-list__checks-field
+		margin-bottom: 5px
+	.elect-answers-list__checks-name
+		font-size: 14px
+	.select-answers-list__btn
+		font-size: 18px
+		width: calc(258px + 42px * 2)
+	.select-answers-list__checks-name
+		margin-left: 21px
+	.select-answers-list__checks-btn
+		width: 19px
+		height: 19px
+		border: solid 1px #979797
+		background-color: #fffdfd
+@media (min-width: 768px)
+	.oprosnik__container
+		width: 720px
+		margin: 0 auto
+		padding:
+			top: 43px
+			bottom: 68px
+	.oprosnik__content
+		width: 100%
+		max-width: 100%
+		margin: 0 auto
+		padding:
+			right: 15px
+			left: 15px
+@media (min-width: 992px)
+	.oprosnik__container
+		width: 960px
+		margin: 0 auto
+		padding:
+			top: 43px
+			bottom: 68px
+	.oprosnik__content
+		width: 785px
+		max-width: 100%
+		margin: 0 auto
+		padding:
+			right: 15px
+			left: 15px
+@media (min-width: 1200px)
+	.oprosnik__container
+		width: 1040px
+		margin: 0 auto
+		padding:
+			top: 136px
+			bottom: 136px
+	.oprosnik__content
+		width: 785px
+		padding:
+			right: 15px
+			left: 15px
+	.oprosnik__title
+		font-size: 64px
+		line-height: 1.16
+		margin-bottom: 46px
+	.oprosnik__sub-title
+		font-size: 36px
+		margin-bottom: 24px
+	.oprosnik__paragraph
+		font-size: 24px
+		margin-bottom: 75px
+	.select-answers-list__title
+		font-size: 36px
+		margin-bottom: 13px
+	.select-answers-list__sub-title
+		font-size: 24px
+		margin-bottom: 34px
+	.select-answers-list__checks
+		margin-bottom: calc(56px - 17px)
+	.select-answers-list__checks-field
+		margin-bottom: 17px
+	.elect-answers-list__checks-name
+		font-size: 16px
+		margin-left: 21px
+	.select-answers-list__btn
+		font-size: 18px
+	.select-answers-list__checks-btn
+		width: 19px
+		height: 19px
+		border: solid 1px #979797
+		background-color: #fffdfd
+@media (min-width: 1920px)
+	.oprosnik__container
+		width: 1320px
+		margin:
+			left: 0
+			right: auto
+		padding:
+			top: 136px
+			bottom: 136px
+	.oprosnik__content
+		width: 785px
+		padding:
+			right: 15px
+			left: 15px
+	.oprosnik__title
+		font-size: 64px
+		line-height: 1.16
+		margin-bottom: 46px
+	.oprosnik__sub-title
+		font-size: 36px
+		margin-bottom: 24px
+	.oprosnik__paragraph
+		font-size: 24px
+		margin-bottom: 75px
+	.select-answers-list__title
+		font-size: 36px
+		margin-bottom: 13px
+	.select-answers-list__sub-title
+		font-size: 24px
+		margin-bottom: 34px
+	.select-answers-list__checks
+		margin-bottom: calc(56px - 17px)
+	.select-answers-list__checks-field
+		margin-bottom: 17px
+	.elect-answers-list__checks-name
+		font-size: 16px
+		margin-left: 21px
+	.select-answers-list__btn
+		font-size: 18px
+	.select-answers-list__checks-btn
+		width: 19px
+		height: 19px
+		border: solid 1px #979797
+		background-color: #fffdfd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

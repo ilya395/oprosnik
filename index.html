@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>oprosnik Skyline</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<script src="js/libs.min.js"></script>
+</head>
+<body>
+
+	<div class="oprosnik__section">
+		<div class="oprosnik__container">
+			<div class="oprosnik__content">
+				<div class="oprosnik__title">
+					Квартира в новостройке или вторичное жилье?
+				</div>
+				<div class="oprosnik__sub-title">
+					Пройдите тест и узнайте, где вам будет комфортнее.
+				</div>
+				<div class="oprosnik__paragraph">
+					Многие стоят перед сложным выбором: новостройка или вторичное жилье. В обоих вариантах есть свои плюсы и минусы, а выбор настолько велик, что сложно определиться. Именно поэтому мы подготовили тест, который покажет, какое жилье подойдет именно вам.
+				</div>
+				<div class="oprosnik__select-answers-list">
+
+					<div class="select-answers-list__item item-first active">
+						<div class="select-answers-list__title">
+							Вопрос 1
+						</div>
+						<div class="select-answers-list__sub-title">
+							Когда вы планируете переехать?
+						</div>
+						<form class="select-answers-list__form" id="oprosnik_1">
+							<div class="select-answers-list__checks">
+								<div class="select-answers-list__checks-field">
+									<input type="radio" name="oprosnik_1" class="select-answers-list__checks-btn" id="oprosnik_1_1" required>
+									<label for="oprosnik_1_1" class="select-answers-list__checks-name">
+										Я не тороплюсь: пусть строят, а я пока поднакоплю на ремонт
+									</label>
+								</div>
+								<div class="select-answers-list__checks-field">
+									<input type="radio" name="oprosnik_1" class="select-answers-list__checks-btn" id="oprosnik_1_2" required>
+									<label for="oprosnik_1_2" class="select-answers-list__checks-name">
+										Я не тороплюсь: пусть строят, а я пока поднакоплю на ремонт
+									</label>
+								</div>
+							</div>
+							<div class="select-answers-list__button">
+								<button class="select-answers-list__btn" id="oprosnik_1_Btn">Далее</button>
+							</div>
+						</form>
+					</div>
+					
+					<div class="select-answers-list__item item-second">
+						<div class="select-answers-list__title">
+							Вопрос 2
+						</div>
+						<div class="select-answers-list__sub-title">
+							Важно ли для вас благоустройство двора?
+						</div>
+						<form class="select-answers-list__form" id="oprosnikItemSecondForm">
+							<div class="select-answers-list__checks">
+								<div class="select-answers-list__checks-field">
+									<input type="radio" name="oprosnikItemSecondField" class="select-answers-list__checks-btn" id="oprosnikItemSecondFieldFirst" required>
+									<label for="oprosnikItemSecondFieldFirst" class="select-answers-list__checks-name">
+										Да, мне нравятся современные дворы с детской площадкой, спортивной зоной и ландшафтным озеленением
+									</label>
+								</div>
+								<div class="select-answers-list__checks-field">
+									<input type="radio" name="oprosnikItemSecondField" class="select-answers-list__checks-btn" id="oprosnikItemSecondFieldSecond" required>
+									<label for="oprosnikItemSecondFieldSecond" class="select-answers-list__checks-name">
+										Нет: я же буду жить в квартире, а не во дворе
+									</label>
+								</div>
+							</div>
+							<div class="select-answers-list__button">
+								<button class="select-answers-list__btn" id="oprosnikItemSecondBtn">Далее</button>
+							</div>
+						</form>
+					</div>
+					<div class="select-answers-list__item item-third">
+						<div class="select-answers-list__title">
+							Вопрос 3
+						</div>
+						<div class="select-answers-list__sub-title">
+							Как вы относитесь к ремонту?
+						</div>
+						<div class="select-answers-list__checks">
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									Уже нашел дизайнера! Буду делать все так, как хочется мне
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemSecond">
+								<label for="oprosnikItemSecond" class="select-answers-list__checks-name">
+									Только не это! Лучше сразу въехать в готовую квартиру, пусть и с виниловыми обоями в ромашку
+								</label>
+							</div>
+						</div>
+						<div class="select-answers-list__button">
+							<button class="select-answers-list__btn">Далее</button>
+						</div>
+					</div>
+					<div class="select-answers-list__item item-fourth">
+						<div class="select-answers-list__title">
+							Вопрос 4
+						</div>
+						<div class="select-answers-list__sub-title">
+							Что точно должно быть в вашем доме? (выберите не более 3-х вариантов)
+						</div>
+						<div class="select-answers-list__checks">
+							<div class="select-answers-list__checks-field">
+								<input type="check" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									Детская площадка и спортивная зона
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="check" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemSecond">
+								<label for="oprosnikItemSecond" class="select-answers-list__checks-name">
+									Экосад и ландшафтное озеленение
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="check" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									Скоростные лифты 
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="check" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									Консьерж
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="check" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									Зона для хранения в подъезде
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="check" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									Колясочная
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="check" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									Система видеонаблюдения
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="check" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									Подземная парковка
+								</label>
+							</div>
+						</div>
+						<div class="select-answers-list__button">
+							<button class="select-answers-list__btn">Далее</button>
+						</div>
+					</div>
+					<div class="select-answers-list__item item-fifth">
+						<div class="select-answers-list__title">
+							Вопрос 5
+						</div>
+						<div class="select-answers-list__sub-title">
+							Какую квартиру вы ищите?
+						</div>
+						<div class="select-answers-list__checks">
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									Однокомнатную
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemSecond">
+								<label for="oprosnikItemSecond" class="select-answers-list__checks-name">
+									Двухкомнатную
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemSecond">
+								<label for="oprosnikItemSecond" class="select-answers-list__checks-name">
+									Трехкомнатную
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemSecond">
+								<label for="oprosnikItemSecond" class="select-answers-list__checks-name">
+									Более 3 комнат
+								</label>
+							</div>
+						</div>
+						<div class="select-answers-list__button">
+							<button class="select-answers-list__btn">Далее</button>
+						</div>
+					</div>
+					<div class="select-answers-list__item item-sixth">
+						<div class="select-answers-list__title">
+							Вопрос 6
+						</div>
+						<div class="select-answers-list__sub-title">
+							На каком этаже вам было бы комфортно жить?
+						</div>
+						<div class="select-answers-list__checks">
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									1-5 этаж
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemSecond">
+								<label for="oprosnikItemSecond" class="select-answers-list__checks-name">
+									5-10 этаж
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemSecond">
+								<label for="oprosnikItemSecond" class="select-answers-list__checks-name">
+									10 этаж и выше 
+								</label>
+							</div>
+						</div>
+						<div class="select-answers-list__button">
+							<button class="select-answers-list__btn">Далее</button>
+						</div>
+					</div>
+					<div class="select-answers-list__item item-seventh">
+						<div class="select-answers-list__title">
+							Вопрос 7
+						</div>
+						<div class="select-answers-list__sub-title">
+							При выборе квартиры для вас ключевым фактором является цена?
+						</div>
+						<div class="select-answers-list__checks">
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemFirst">
+								<label for="oprosnikItemFirst" class="select-answers-list__checks-name">
+									Да
+								</label>
+							</div>
+							<div class="select-answers-list__checks-field">
+								<input type="radio" name="oprosnikSelectItem" class="select-answers-list__checks-btn" id="oprosnikItemSecond">
+								<label for="oprosnikItemSecond" class="select-answers-list__checks-name">
+									Нет
+								</label>
+							</div>
+						</div>
+						<div class="select-answers-list__button">
+							<button class="select-answers-list__btn">Далее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/common.js"></script>
+</body>
+</html>
