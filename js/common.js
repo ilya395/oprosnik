@@ -78,7 +78,13 @@ $(document).ready( function() {
 		};
 	});
 
-	$('#oprosnikFeedBackBtn').on('click', function() {
+	$(document).on('is_sucsessful', function(event, response) {
+		form = response.form;
+		$('#oprosnikFeedBackBtn').css('display', 'none');
+		$('#oprosnikFeedBackSucsessBtn').css('display', 'block');
+	});
+
+	$('#oprosnikFeedBackSucsessBtn').on('click', function() {
 		$('.select-answers-list__item.item-feedback').removeClass('active');
 		$('.select-answers-list__item.item-finish').addClass('active');
 
@@ -110,81 +116,15 @@ $(document).ready( function() {
 
 	});
 
-
+// включаем анимацию
+	window.onscroll = function() {	
+		var specOprosnikAnimate = document.getElementById('specOprosnikAnimate');
+		var coordsForOprosnik = specOprosnikAnimate.getBoundingClientRect();
+		console.log(coordsForOprosnik.top);
+		var windowHeight = document.documentElement.clientHeight;
+		if (coordsForOprosnik.top < 400) {
+			var firstQuestionMove = document.getElementById('firstQuestionMove');
+			firstQuestionMove.classList.add('show');
+		}
+	}
 });
-
-
-
-
-
-	// все коробки 
-/*	var items = document.getElementsByClassName('select-answers-list__item');
-	
-	var itemBtn = document.getElementsByClassName('select-answers-list__btn');
-	var itemForm = document.getElementsByClassName('select-answers-list__form');
-
-	var controlBtn = document.getElementById('oprosnik_0_btn');
-
-
-
-
-	var itemIndex = 1;
-	showItems(itemIndex);
-
-	controlBtn.addEventListener( 'click', function() {
-		showItems(itemIndex += 1);
-	});
-
-	// массив с ответами
-	var arr = [];
-
-	function showItems(n) {
-
-		//
-			for (i = 0; i < items.length; i++) {
-				var radios = items[i].querySelectorAll('*[name]');
-				//console.log(radios.length);
-				for (var j =0; j < radios.length; j++) {
-					//console.log(radios[j].value);
-					if (radios[j].checked) {
-						//console.log(radios[j].value);
-						arr = radios[j].value;
-						//console.log(arr);
-						
-						//перемещение
-						if (n > items.length) {
-							itemIndex = 1;
-						}
-						if (n < 1) {
-							itemIndex = items.length;
-						}
-						for (i = 0; i < items.length; i++) {
-							items[i].style.display = "none";
-
-						}
-						items[itemIndex - 1].style.display = "block";
-
-					}
-				}
-			};
-
-		//условие перехода к другому вопросу
-		//itemForm.addEventListener('click', function getRadioGroupValue(this) {
-
-		//});
-
-		//if (radioGroupObj[i].checked) {
-	//	var radios = document.getElementsByName('oprosnik_1');
-	//	for (var j = 0, length = radios.length; j < length; j++) {
-	//		if (radios[j].checked) {
-
-	//			console.log(radios[j].value);
-
-	//		}
-	//	}
-
-			//items[itemIndex].classList.add("active");
-
-		//}
-	};
-	*/

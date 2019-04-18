@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<div class="oprosnik__section">
+	<div class="oprosnik__section" id="specOprosnikAnimate">
 		<div class="oprosnik__container">
 			<div class="oprosnik__content">
 				<div class="oprosnik__title">
@@ -24,7 +24,7 @@
 				</div>
 				<div class="oprosnik__select-answers-list">
 
-					<div class="select-answers-list__item item-first active">
+					<div class="select-answers-list__item item-first active" id="firstQuestionMove">
 
 						<div class="select-answers-list__title">
 							Вопрос 1
@@ -326,7 +326,10 @@
 								</div>
 							</div>
 							<div class="select-answers-list__button">
-								<button type="button" class="select-answers-list__btn" id="oprosnikFeedBackBtn">Получить ответы</button>
+								<button type="button" class="select-answers-list__btn" id="oprosnikFeedBackBtn">Оставить заявку</button>
+							</div>
+							<div class="select-answers-list__button sucsess-block">
+								<button type="button" class="select-answers-list__btn sucsess-dutton" id="oprosnikFeedBackSucsessBtn">Получить ответы</button>
 							</div>
 						</form>
 					</div>
@@ -359,11 +362,7 @@
 							</div>
 						</div>
 					</div>
-<!--
-					<div class="select-answers-list__button">
-						<button type="button" class="select-answers-list__btn" id="oprosnik_0_btn">Вперед</button>
-					</div>
--->
+
 				</div>
 			</div>
 		</div>
