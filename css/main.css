@@ -132,12 +132,46 @@
   color: #fff;
   padding: 16px 42px 16px 42px;
   width: -webkit-calc(258px + 42px * 2);
-  width: calc(258px + 42px * 2); }
+  width: calc(258px + 42px * 2);
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease; }
+  .select-answers-list__btn:hover {
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.35), 0 6px 12px 0 rgba(0, 0, 0, 0.35);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.35), 0 6px 12px 0 rgba(0, 0, 0, 0.35); }
+
+.select-answers-list__input-block {
+  font-family: SFUIDisplay;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 6px 12px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 6px 12px 0 rgba(0, 0, 0, 0.05);
+  border: solid 0.5px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  padding: 16px 16px 16px 16px; }
 
 .select-answers-list__item {
   display: none; }
 
 .select-answers-list__item.active {
+  display: block; }
+
+.select-answers-list__item.item-finish {
+  display: block; }
+
+.select-answers-list__answer-a, .select-answers-list__answer-b {
+  display: none; }
+
+.select-answers-list__answer-a.active, .select-answers-list__answer-b.active {
   display: block; }
 
 /*
@@ -188,7 +222,10 @@
     width: 19px;
     height: 19px;
     border: solid 1px #979797;
-    background-color: #fffdfd; } }
+    background-color: #fffdfd; }
+  .select-answers-list__input-block {
+    font-size: 18px;
+    width: 100%; } }
 
 @media (min-width: 576px) {
   .oprosnik__container {
@@ -235,7 +272,11 @@
     width: 19px;
     height: 19px;
     border: solid 1px #979797;
-    background-color: #fffdfd; } }
+    background-color: #fffdfd; }
+  .select-answers-list__input-block {
+    font-size: 18px;
+    width: -webkit-calc(258px + 42px * 2);
+    width: calc(258px + 42px * 2); } }
 
 @media (min-width: 768px) {
   .oprosnik__container {
